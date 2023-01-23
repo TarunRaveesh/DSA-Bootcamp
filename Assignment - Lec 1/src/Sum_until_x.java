@@ -1,6 +1,5 @@
 package src;
 
-import javax.crypto.spec.PSource;
 import java.util.Scanner;
 
 public class Sum_until_x {
@@ -8,13 +7,12 @@ public class Sum_until_x {
         Scanner in = new Scanner(System.in);
         int sum = 0;
         while(true) {
-            char x = in.next().trim().charAt(0);
-            if (x != 'x') {
-                int temp = x;
-                sum += x;
-            } else {
+            String s = in.next();
+            if (s.equals("x")) {
                 break;
             }
+            int n = Integer.parseInt(s);
+            sum += n;
         }
         System.out.println(sum);
     }
