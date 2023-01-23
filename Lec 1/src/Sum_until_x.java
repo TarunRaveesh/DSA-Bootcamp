@@ -1,5 +1,3 @@
-package src;
-
 import java.util.Scanner;
 
 public class Sum_until_x {
