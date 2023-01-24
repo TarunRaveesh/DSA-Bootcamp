@@ -1,6 +1,5 @@
-import java.awt.*;
 import java.util.Scanner;
-public class Areas_Perimeters {
+public class Perimeter_Areas_Volumes {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         double Perimeter, Area, TSA, CSA, Volume, pi = Math.PI;
