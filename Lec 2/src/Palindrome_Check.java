@@ -4,7 +4,7 @@ public class Palindrome_Check {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String s = in.nextLine();
-//        String r = new StringBuilder(s).reverse().toString();
+//      String r = new StringBuilder(s).reverse().toString();
         char[] S = s.toCharArray();
         char[] R = new char[S.length];
         for (int i = 0; i < S.length; i++) {
