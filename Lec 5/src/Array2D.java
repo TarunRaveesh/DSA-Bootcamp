@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Array2D {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int[][] arr = new int[3][5];
+        int[][] arr = new int[3][3];
         System.out.println("Length = " + arr.length);
 
         for(int row = 0; row < arr.length; row++) {             // Iterating no of rows
@@ -13,9 +13,10 @@ public class Array2D {
             }
         }
 
-//        for(int row = 0; row < arr.length; row++) {
-//            System.out.println(Arrays.toString(arr[row]));
-//        }
+/*        for(int row = 0; row < arr.length; row++) {
+            System.out.println(Arrays.toString(arr[row]));
+          }
+*/
 
         for(int[] a : arr) {
             System.out.println(Arrays.toString(a));
