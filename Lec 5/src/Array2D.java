@@ -21,5 +21,9 @@ public class Array2D {
         for(int[] a : arr) {
             System.out.println(Arrays.toString(a));
         }
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr.toString());
+        }
     }
 }

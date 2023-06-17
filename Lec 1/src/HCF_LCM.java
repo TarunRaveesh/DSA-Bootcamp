@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class HCF_LCM {
-
     public static int LCM(int x, int y) {
         int lcm, greater;
         greater = Math.max(x, y);

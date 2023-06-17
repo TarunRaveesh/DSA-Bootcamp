@@ -16,7 +16,7 @@ public class Largest {
                 System.out.println(c);
             }*/
 
-          int max = Math.max (Math.max(a, b), c);
+          int max = Math.max(Math.max(a, b), c);
             System.out.println(max);
         }
     }
