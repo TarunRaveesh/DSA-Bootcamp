@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class HCF_LCM {
     public static int LCM(int x, int y) {
-        int lcm, greater;
-        greater = Math.max(x, y);
+        int lcm, i;
+        i = Math.max(x, y);
 
         while(true) {
-            if (greater % x == 0 && greater % y == 0) {
-                lcm = greater;
+            if (i % x == 0 && i % y == 0) {
+                lcm = i;
                 break;
             }
-            greater += 1;
+            i += 1;
         }
         return lcm;
     }

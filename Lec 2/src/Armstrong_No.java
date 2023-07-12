@@ -6,9 +6,7 @@ public class Armstrong_No {
         int n = in.nextInt();
         System.out.println("Number = " + n);
 
-        int dtemp = n;
-        int temp = n;
-        int m, digits = 0, sum = 0;
+        int dtemp = n, temp = n, m, digits = 0, sum = 0;
 
         while (dtemp > 0) {
             dtemp /= 10;
