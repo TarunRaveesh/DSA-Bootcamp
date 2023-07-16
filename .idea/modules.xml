@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/1. Java Basics/1. Java Basics.iml" filepath="$PROJECT_DIR$/1. Java Basics/1. Java Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2. Conditional Statements/2. Conditional Statements.iml" filepath="$PROJECT_DIR$/2. Conditional Statements/2. Conditional Statements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3. Loops/3. Loops.iml" filepath="$PROJECT_DIR$/3. Loops/3. Loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4. Functions/4. Functions.iml" filepath="$PROJECT_DIR$/4. Functions/4. Functions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5. Arrays/5. Arrays.iml" filepath="$PROJECT_DIR$/5. Arrays/5. Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DSA-Bootcamp.iml" filepath="$PROJECT_DIR$/.idea/DSA-Bootcamp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lec 1/Lec 1.iml" filepath="$PROJECT_DIR$/Lec 1/Lec 1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lec 2/Lec 2.iml" filepath="$PROJECT_DIR$/Lec 2/Lec 2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lec 3/Lec 3.iml" filepath="$PROJECT_DIR$/Lec 3/Lec 3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lec 4/Lec 4.iml" filepath="$PROJECT_DIR$/Lec 4/Lec 4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lec 5/Lec 5.iml" filepath="$PROJECT_DIR$/Lec 5/Lec 5.iml" />
       <module fileurl="file://$PROJECT_DIR$/Live Practice/Live Practice.iml" filepath="$PROJECT_DIR$/Live Practice/Live Practice.iml" />
     </modules>
   </component>
