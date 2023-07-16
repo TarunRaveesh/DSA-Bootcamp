@@ -21,12 +21,12 @@ public class Primes {
             return false;
         }
         int i = 2;
-        while (i * i <= n) {
+        while (i <= Math.sqrt(n)) {
             if (n % i == 0) {
                 return false;
             }
             i++;
         }
-        return i * i > n;
+        return i > Math.sqrt(n);
     }
 }

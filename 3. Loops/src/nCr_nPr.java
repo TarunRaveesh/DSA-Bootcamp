@@ -18,8 +18,8 @@ public class nCr_nPr {
         int r = in.nextInt();
 
         if (n >= r){
-            double nPr = fact(n) / fact(n - r);
-            double nCr = fact(n) / (fact(n - r) * fact(r));
+            double nPr = (double) fact(n) / fact(n - r);
+            double nCr = (double) fact(n) / (fact(n - r) * fact(r));
 
             System.out.println("Permutation = " + nPr);
             System.out.println("Combination = " + nCr);

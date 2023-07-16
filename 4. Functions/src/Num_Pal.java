@@ -9,7 +9,7 @@ public class Num_Pal {
     }
 
     static void Palindrome(int n) {
-        int N1 = n, N2 = n, sum = 0, rem = 0, digits = 0;
+        int N1 = n, N2 = n, sum = 0, rem, digits = 0;
         while(N1 > 0) {
             N1 /= 10;
             digits++;
