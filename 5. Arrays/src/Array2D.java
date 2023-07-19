@@ -7,7 +7,7 @@ public class Array2D {
         int[][] arr = new int[3][3];
         System.out.println("Length = " + arr.length);
 
-        for(int row = 0; row < arr.length; row++) {             //                   Iterating no of rows
+        for(int row = 0; row < arr.length; row++) {             // Iterating no of rows
             for(int col = 0; col < arr[row].length; col++) {    // For every row iterating each column of the 2D array
                 arr[row][col] = in.nextInt();
             }
