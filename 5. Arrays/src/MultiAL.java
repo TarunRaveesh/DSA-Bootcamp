@@ -7,17 +7,19 @@ public class MultiAL {
         ArrayList<ArrayList<Integer>> list = new ArrayList<>(5);
 
         // Initialisation
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 3; i++) {
             list.add(new ArrayList<>());
         }
         // Declaration
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 list.get(i).add(in.nextInt());
             }
             System.out.println();
         }
 
         System.out.println(list);
+        System.out.println(list.size());
+        System.out.println(list.get(1).get(2));
     }
 }

@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class Batting_Avg {
+public class
+Batting_Avg {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Runs: ");
