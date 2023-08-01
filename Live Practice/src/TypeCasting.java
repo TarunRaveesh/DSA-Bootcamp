@@ -17,7 +17,7 @@ public class TypeCasting {
         System.out.println(num);
 
         int a = 258;
-        byte b = (byte)(a);  // 258 % 256 = 1
+        byte b = (byte)(a);  // 258 % 256 = 2
         System.out.println(b);
 
 //      Automatic type promotion in expressions

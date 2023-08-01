@@ -23,7 +23,7 @@ public class Array2D {
         }
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr.toString());
+            System.out.println(Arrays.deepToString(arr));
         }
     }
 }
