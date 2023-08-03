@@ -9,9 +9,9 @@ public class ArrayListEg {
         for (int i = 0; i < 5; i++) {
             list.add(in.nextInt());
         }
-
         for (int i = 0; i < 5; i++) {
             System.out.println(list.get(i)); // Here the normal list[index] syntax will not work as in normal arrays
         }
+
     }
 }
