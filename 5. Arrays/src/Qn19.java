@@ -1,26 +1,27 @@
-import java.util.*;
-
 public class Qn19 {
+            
     public static void main(String[] args) {
-        int[] num = {9,9,9,9,9,9,9,9,9,9};
-        int k = 1;
-        System.out.println(addToArrayForm(num, k));
+        int[][] logs = {{1950,1961},{1960,1971},{1970,1981}};
+        int ans = maximumPopulation(logs);
+        System.out.println(ans);
     }
+    static int maximumPopulation(int[][] logs) {
+        int[] pop = new int[101];
+        for(int[] log : logs) {
+            pop[log[0] - 1950]++;
+            pop[log[1] - 1950]--;
+        }
 
-    static List<Integer> addToArrayForm(int[] num, int k) {
-        long n = 0;
-        long rem = 0;
-        ArrayList<Integer> arr = new ArrayList<>();
-        for(int i = 0; i < num.length; i++) {
-            n += (num[i] * Math.pow(10, num.length - i - 1));
+        int maxPop = 0;
+        int maxPopYr = 0;
+        int currentPop = 0;
+        for(int i = 0; i < 101; i++) {
+            currentPop += pop[i];
+            if (currentPop > maxPop) {
+                maxPop = currentPop;
+                maxPopYr = i + 1950;
+            }
         }
-        n += k;
-        while (n > 0) {
-            rem = n % 10;
-            n /= 10;
-            arr.add((int) rem);
-        }
-        Collections.reverse(arr);
-        return arr;
+        return maxPopYr;
     }
 }
