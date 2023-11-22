@@ -7,8 +7,11 @@
       <module fileurl="file://$PROJECT_DIR$/3. Loops/3. Loops.iml" filepath="$PROJECT_DIR$/3. Loops/3. Loops.iml" />
       <module fileurl="file://$PROJECT_DIR$/4. Functions/4. Functions.iml" filepath="$PROJECT_DIR$/4. Functions/4. Functions.iml" />
       <module fileurl="file://$PROJECT_DIR$/5. Arrays/5. Arrays.iml" filepath="$PROJECT_DIR$/5. Arrays/5. Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6. Searching/6. Searching.iml" filepath="$PROJECT_DIR$/6. Searching/6. Searching.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Code Topics/Code Topics.iml" filepath="$PROJECT_DIR$/Code Topics/Code Topics.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DSA-Bootcamp.iml" filepath="$PROJECT_DIR$/.idea/DSA-Bootcamp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Live Practice/Live Practice.iml" filepath="$PROJECT_DIR$/Live Practice/Live Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Live Practice/Imp Topics.iml" filepath="$PROJECT_DIR$/Live Practice/Imp Topics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7. Sorting/Sorting.iml" filepath="$PROJECT_DIR$/7. Sorting/Sorting.iml" />
     </modules>
   </component>
 </project>
