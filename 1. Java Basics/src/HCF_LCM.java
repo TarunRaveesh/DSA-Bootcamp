@@ -20,5 +20,6 @@ public class HCF_LCM {
         int b = in.nextInt();
         System.out.println("LCM = " + LCM(a, b));
         System.out.println("HCF = " + ((a * b)/LCM(a, b)));
+        System.out.println(LCM(a, b) +  ((a * b)/LCM(a, b)));
     }
 }

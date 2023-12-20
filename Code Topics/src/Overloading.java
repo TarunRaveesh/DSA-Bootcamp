@@ -15,6 +15,6 @@ public class Overloading {
 
     /* To carry out fn over loading:
        1. Either No of arguments should be different.
-       2. Or the data type of the args must be different.
+       2. Or the data type of the formal parametervvvvvvvvvvvvvvvvvvvvvvvvvvs must be different.
     */
 }

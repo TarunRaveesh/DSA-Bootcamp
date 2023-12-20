@@ -11,7 +11,6 @@ public class BinarySearch {
 
         while (start <= end) {
             int mid = start + (end - start) / 2; // Since, (start + end) may exceed the range of int in java
-
             if (target < arr[mid]) {
                 end = mid - 1;
             } else if (target > arr[mid]) {

@@ -1,0 +1,18 @@
+public class SortedMatrixSearch {
+    public static void main(String[] args) {
+        int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        };
+
+    }
+
+    static int[] binarySearch(int[][] matrix, int) {
+        return new int[] {-1, -1};
+    }
+
+    static int[] findTarget() {
+        return new int[] {-1, -1};
+    }
+}

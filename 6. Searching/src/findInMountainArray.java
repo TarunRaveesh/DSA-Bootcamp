@@ -1,12 +1,12 @@
-public class findInBitonicArray {
+public class findInMountainArray {
     public static void main(String[] args) {
         int[] arr = {0, 5, 3, 1};
         int target = 1;
-        int ans = findInMountainArray(target, arr);
+        int ans = findAns(target, arr);
         System.out.println(ans);
     }
 
-    public static int findInMountainArray(int target, int[] mountainArr) {
+    public static int findAns(int target, int[] mountainArr) {
         int peak = peakSearch(mountainArr);
         int s = 0;
         int e = peak;
@@ -31,7 +31,6 @@ public class findInBitonicArray {
                 s = m + 1;
             }
         }
-        s
         return s;
     }
 
