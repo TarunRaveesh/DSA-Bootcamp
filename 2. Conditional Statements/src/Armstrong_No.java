@@ -6,7 +6,7 @@ public class Armstrong_No {
         int n = in.nextInt();
         System.out.println("Number = " + n);
 
-        int dtemp = n, temp = n, m, digits = 0, sum = 0;
+        int dtemp = n, temp = n, m, digits = 0, sum = 0;    
 
         while (dtemp > 0) {
             dtemp /= 10;
@@ -17,7 +17,7 @@ public class Armstrong_No {
         while(temp > 0) {
             m = temp % 10;
             temp /= 10;
-            sum += Math.pow(m, digits);
+            sum += (int) Math.pow(m, digits);
             System.out.println("Current Last Digit = " + m + ", Current Sum = " + sum);
         }
         if (sum == n) {
