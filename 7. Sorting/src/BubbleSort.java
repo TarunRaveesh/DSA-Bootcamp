@@ -2,11 +2,12 @@ import java.util.Arrays;
 
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
-        System.out.println(Arrays.toString(bubble(arr)));
+        int[] arr = {2, 1, 3, 4, 5};
+        bubble(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
-    public static int[] bubble(int[] arr) {
+    public static void bubble(int[] arr) {
         boolean swapped;
         for (int i = 0; i < arr.length; i++) {
             swapped = false;
@@ -22,7 +23,6 @@ public class BubbleSort {
                 break;
             }
         }
-        return arr;
     }
 
 }

@@ -6,7 +6,7 @@ public class Swap {
 //      int temp = a;
 //      a = b;
 //      b = temp;
-        System.out.println("Swap: " + x + " " + y);
+        System.out.println("Swapped: " + x + " " + y);
     }
 
     static void swap(int a, int b) { /* i.e. here a and b are completely new objects formed in the
