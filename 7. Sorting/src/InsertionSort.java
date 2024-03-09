@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class InsertionSort {
     public static void main(String[] args) {
         int[] arr = {3, 5, 4, 1, 2};
@@ -18,7 +17,6 @@ public class InsertionSort {
             }
         }
     }
-
     static void swap(int[] arr, int a, int b) {
         int temp = arr[a];
         arr[a] = arr[b];
