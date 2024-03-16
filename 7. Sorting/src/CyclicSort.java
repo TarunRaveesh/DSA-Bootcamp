@@ -10,7 +10,7 @@ public class CyclicSort {
         while (i < arr.length) {
             int corrected = arr[i] - 1;
             if (arr[i] != arr[corrected]) {
-                swap(arr, i, arr[i] - 1);
+                swap(arr, i, corrected);
             } else {
                 i++;
             }
