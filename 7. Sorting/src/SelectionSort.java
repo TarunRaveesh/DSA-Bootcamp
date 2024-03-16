@@ -12,9 +12,9 @@ public class SelectionSort {
             swap(arr, maxIndex, last);
         }
     }
-    static int getMaxIndex(int[] arr, int a, int b) {
-        int max = a;
-        for (int i = a; i <= b; i++) {
+    static int getMaxIndex(int[] arr, int start, int end) {
+        int max = start;
+        for (int i = start; i <= end; i++) {
             if (arr[max] <= arr[i]) {
                 max = i;
             }
