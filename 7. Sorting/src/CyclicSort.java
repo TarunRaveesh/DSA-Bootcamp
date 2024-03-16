@@ -8,7 +8,8 @@ public class CyclicSort {
     static void cyclic(int[] arr) {
         int i = 0;
         while (i < arr.length) {
-            if (arr[i] > 0 && arr[i] != arr[arr[i] - 1]) {
+            int corrected = arr[i] - 1;
+            if (arr[i] != arr[corrected]) {
                 swap(arr, i, arr[i] - 1);
             } else {
                 i++;
