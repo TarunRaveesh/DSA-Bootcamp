@@ -47,5 +47,13 @@ public class Main {
 
         // Also above the Arrays.toString method is overriding the toString method in the println method. Since the final terminal
         // output is always a string whenever we use sout.
+
+        String str = null;
+        System.out.println(str);
+
+        //using wrapper class
+        Integer num = new Integer(56);
+        System.out.println(num.toString());
+        System.out.println(num);
     }
 }
