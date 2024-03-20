@@ -10,7 +10,7 @@ public class Palindrome {
     static boolean isPalindrome1(String str) {
         // Method 1 - String Builder
         str = str.toLowerCase();
-        String rev = new StringBuilder(str).reverse().toString();
+        String rev = new StringBuilder(str).reverse().toString(); // Less optimal, creates more objects and consumes more space
         return str.equals(rev);
     }
 
