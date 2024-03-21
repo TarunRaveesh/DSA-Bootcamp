@@ -19,7 +19,7 @@ public class Palindrome {
         str = str.toLowerCase();
         for (int i = 0; i < str.length(); i++) {
             char s = str.charAt(i);
-            char e = str.charAt(str.length() - 1 - i);
+            char e = str.charAt(str.length() - i - 1);
             if (s != e) return false;
         }
         return true;
