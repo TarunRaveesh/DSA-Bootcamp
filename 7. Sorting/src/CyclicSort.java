@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class CyclicSort {
+public class CyclicSort { // Only works when the array elements are in range 1-n or 0-n
     public static void main(String[] args) {
         int[] arr = {3, 5, 4, 1, 2};
         cyclic(arr);

@@ -1,7 +1,7 @@
 import java.util.Arrays;
 public class InsertionSort {
     public static void main(String[] args) {
-        int[] arr = {3, 5, 4, 1, 2};
+        int[] arr = {9, 1023, 90, 23, 1, 200};
         insertion(arr);
         System.out.println(Arrays.toString(arr));
     }
