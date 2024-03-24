@@ -1,6 +1,6 @@
 public class SetBits {
     public static void main(String[] args) {
-        int n = 4876;
+        int n = 25;
         System.out.println(Integer.toBinaryString(n));
         System.out.println(setBits1(n));
         System.out.println(setBits2(n));
