@@ -1,4 +1,4 @@
-public class factorial {
+public class RecFact {
     public static void main(String[] args) {
         System.out.println(fact(10));
     }
