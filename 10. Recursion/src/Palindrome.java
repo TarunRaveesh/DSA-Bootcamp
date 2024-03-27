@@ -1,9 +1,10 @@
 public class Palindrome {
     public static void main(String[] args) {
-        int n = 103001;
+        int n = 12321;
         System.out.println(pal(n));
     }
-    static int rev(int n) { // Sometimes u might need additional variables in the argument, in such case use a helper function
+    static int rev(int n) { // Sometimes u might need additional variables in the argument,
+                            // in such case use a helper function
         int digits = (int) (Math.log10(n) + 1);
         return helper(n , digits);
     }
