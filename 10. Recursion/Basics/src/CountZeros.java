@@ -1,6 +1,6 @@
 public class CountZeros {
     public static void main(String[] args) {
-        int n = 2003000903;
+        int n = 20030903;
         System.out.println(count(n));
     }
     static int count(int n) {
