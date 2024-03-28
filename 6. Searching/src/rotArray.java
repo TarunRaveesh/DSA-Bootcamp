@@ -6,9 +6,8 @@ public class rotArray {
     }
 
     public static int pivotSearch(int[] arr, int s, int e) {
-            while(s <= e) {
-                int m = s + (e - s) / 2;
-
+        while(s <= e) {
+            int m = s + (e - s) / 2;
             if (m < e && arr[m] > arr[m + 1]) return m;
             if (m > s && arr[m - 1] > arr[m]) return m - 1;
 
