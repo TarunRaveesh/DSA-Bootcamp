@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class MergeSortInPlace {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // Time: O(nlogn) Space: O(n)
         int[] arr = {5, 2, 4, 1, 3};
         mergeInPlace(arr, 0, arr.length);
         System.out.println(Arrays.toString(arr));

@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class MergeSort {
-    public static void main(String[] args) { // Time: O(nlog(n))
+    public static void main(String[] args) { // Time: O(nlogn) Space: O(nlogn)
         int[] arr = {12, 5, 8, 6, 9, 3, 2, 10};
         arr = mergeSort(arr);
         System.out.println(Arrays.toString(arr));
