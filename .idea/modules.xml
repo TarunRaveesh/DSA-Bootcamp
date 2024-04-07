@@ -18,7 +18,8 @@
       <module fileurl="file://$PROJECT_DIR$/10. Recursion/Basics/Basics.iml" filepath="$PROJECT_DIR$/10. Recursion/Basics/Basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/Code Topics/Code Topics.iml" filepath="$PROJECT_DIR$/Code Topics/Code Topics.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DSA-Bootcamp.iml" filepath="$PROJECT_DIR$/.idea/DSA-Bootcamp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/10. Recursion/Patterns_Sorting/Patterns_Sorting.iml" filepath="$PROJECT_DIR$/10. Recursion/Patterns_Sorting/Patterns_Sorting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10. Recursion/Patterns/Patterns.iml" filepath="$PROJECT_DIR$/10. Recursion/Patterns/Patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10. Recursion/Sorting/Sorting.iml" filepath="$PROJECT_DIR$/10. Recursion/Sorting/Sorting.iml" />
     </modules>
   </component>
 </project>
