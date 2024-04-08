@@ -13,6 +13,7 @@ public class SubSeq {
 
         System.out.println(subseq3("", s));
     }
+
     static void subseq(String p, String up) {
         if(up.isEmpty()) {
             System.out.print(p + " ");
@@ -22,6 +23,7 @@ public class SubSeq {
         subseq(p + ch, up.substring(1));
         subseq(p, up.substring(1));
     }
+
     static ArrayList<String> subseq2(String p, String up, ArrayList<String> list) {
         if(up.isEmpty()) {
             list.add(p);
