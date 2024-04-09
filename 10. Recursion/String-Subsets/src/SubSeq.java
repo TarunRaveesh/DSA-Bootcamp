@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class SubSeq {
 
@@ -8,7 +7,7 @@ public class SubSeq {
         String s = "abc";
         subseq("",s);
         System.out.println();
-        ls = subseq2("", s, new ArrayList<String>());
+        ls = subseq2("", s, new ArrayList<>());
         System.out.println(ls);
 
         System.out.println(subseq3("", s));
