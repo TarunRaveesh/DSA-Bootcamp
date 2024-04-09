@@ -12,6 +12,7 @@ public class SubSeq {
         System.out.println(ls);
 
         System.out.println(subseq3("", s));
+        subseqAscii("", s);
     }
 
     static void subseq(String p, String up) {
@@ -48,5 +49,16 @@ public class SubSeq {
 
         left.addAll(right);
         return left;
+    }
+
+    static void subseqAscii(String p, String up) {
+        if(up.isEmpty()) {
+            System.out.print(p + " ");
+            return;
+        }
+        char ch = up.charAt(0);
+        subseqAscii(p + ch, up.substring(1));
+        subseqAscii(p, up.substring(1));
+        subseqAscii(p+ch+0, up.substring(1));
     }
 }
