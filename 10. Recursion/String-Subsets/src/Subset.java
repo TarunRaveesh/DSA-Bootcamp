@@ -12,7 +12,7 @@ public class Subset { //Iteration // Time : O(n.2^n) // Space : O(n.2^n) ------>
         }
         System.out.println();
 
-        int[] nums = {1, 2, 2, 2, 3, 3};
+        int[] nums = {1, 2, 2};
         List<List<Integer>> sol = subsetDuplicates(nums);
         for (List<Integer> ls : sol) {
             System.out.print(ls + " ");
@@ -21,7 +21,6 @@ public class Subset { //Iteration // Time : O(n.2^n) // Space : O(n.2^n) ------>
     static List<List<Integer>> subset(int[] arr) {
         List<List<Integer>> outer = new ArrayList<>(1 << arr.length); // 2^n capacity
         outer.add(new ArrayList<>());
-        System.out.println(outer.size());
         for (int num : arr) {
             int n = outer.size();
             for (int i = 0; i < n; i++) {
