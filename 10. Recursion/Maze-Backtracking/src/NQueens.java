@@ -4,6 +4,15 @@ public class NQueens {
         boolean[][] board = new boolean[row][col];
         System.out.println(queens(board, 0, 0));
     }
+    // Complexity:
+    // The TIME complexity of the N-Queens problem using recursion and backtracking is O(N!), where N is the number
+    // of queens (and the size of the board). This is because there are N possibilities for placing the first queen,
+    // N-2 for the second queen (since it cannot be placed in the same row or diagonal as the first queen), N-4 for
+    // the third queen, and so on. This results in a total of N! possible arrangements.
+
+    // The SPACE complexity of the algorithm is O(N^2), where N is the number of queens. This is because the algorithm
+    // uses a 2D boolean array to represent the board, which has a size of N*N. Additionally, the recursion stack can
+    // go as deep as N, as each recursive call represents placing one queen on the board.
 
     static int queens(boolean[][] board, int row, int count) { // Row Number is equal to no of Queens being placed
         if(row == board.length) {
