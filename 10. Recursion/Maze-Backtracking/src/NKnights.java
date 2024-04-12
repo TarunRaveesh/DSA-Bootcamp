@@ -31,12 +31,12 @@ public class NKnights {
     }
 
     static boolean isSafe(boolean[][] board, int row, int col) {
-        if(isValid(board, row- 2, col - 1)) {
+        if(isValid(board, row - 2, col - 1)) {
             if(board[row - 2][col - 1]) {
                 return false;
             }
         }
-        if(isValid(board, row- 2, col + 1)) {
+        if(isValid(board, row - 2, col + 1)) {
             if(board[row - 2][col + 1]) {
                 return false;
             }
