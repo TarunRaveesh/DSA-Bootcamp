@@ -2,7 +2,7 @@ public class NQueens {
     public static void main(String[] args) {
         int row = 4, col = 4;
         boolean[][] board = new boolean[row][col];
-        System.out.println(queens(board, 0, 0));
+        System.out.println(queens(board, 0));
     }
     // Complexity:
     // The TIME complexity of the N-Queens problem using recursion and backtracking is O(N!), where N is the number
@@ -14,18 +14,20 @@ public class NQueens {
     // uses a 2D boolean array to represent the board, which has a size of N*N. Additionally, the recursion stack can
     // go as deep as N, as each recursive call represents placing one queen on the board.
 
-    static int queens(boolean[][] board, int row, int count) { // Row Number is equal to no of Queens being placed
+    static int queens(boolean[][] board, int row) { // Row Number is equal to no of Queens being placed
         if(row == board.length) {
             display(board);
             System.out.println();
-            return count + 1;
+            return 1;
         }
+
+        int count = 0;
         // Placing the queen and checking for every row and col
         for (int col = 0; col < board[0].length; col++) {
             // Place the queen if it is safe
             if(isSafe(board, row, col)) {
                 board[row][col] = true;
-                count += queens(board, row+1, count);
+                count += queens(board, row+1);
             }
             board[row][col] = false; // Backtrack
         }
