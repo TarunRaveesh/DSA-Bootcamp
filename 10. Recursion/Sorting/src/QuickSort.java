@@ -23,7 +23,7 @@ public class QuickSort {
         int m = s + (e - s)/2;
         int p = arr[m];
 
-        while (s <= e) { // If it already sorted it will not swap below unlike merge sort
+        while (s <= e) { // If it is already sorted it will not swap below unlike merge sort
             while (arr[s] < p) s++;
             while (arr[e] > p) e--;
 

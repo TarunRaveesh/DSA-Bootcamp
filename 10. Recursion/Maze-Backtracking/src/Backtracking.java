@@ -2,7 +2,9 @@ import java.util.Arrays;
 
 public class Backtracking {
     public static void main(String[] args) {
-        boolean[][] board = {{true, true, true}, {true, true, true}, {true, true, true}};
+        boolean[][] board = {{true, true, true},
+                             {true, true, true},
+                             {true, true, true}};
         pathAllDirections(board, "", 0, 0);
         System.out.println();
         System.out.println();
@@ -58,8 +60,6 @@ public class Backtracking {
             System.out.println();
             return;
         }
-
-
 
         if(!maze[r][c]) {
             return;
