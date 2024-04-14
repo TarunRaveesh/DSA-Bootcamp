@@ -39,7 +39,7 @@ public class Backtracking {
         }
 
         // Traversing in all directions will result in infinite recursions as we might get back to the cell we have
-        // already visited, hence mark the mas false to tackle this problem. BUT, when u do that, the maze will be
+        // already visited, hence mark the cell false to tackle this problem. BUT, when u do that, the maze will be
         // altered for the upcoming recursions calls, so now to fix this, again while returning the current function
         // call, change the cell values to true as if the maze was not altered. Now this last step of fixing the changes
         // made while the recursion to make the future calls work as usual is called BACKTRACKING.
