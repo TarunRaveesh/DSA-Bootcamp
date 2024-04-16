@@ -47,9 +47,6 @@ public class ClassObject {
         final FinalCheck Pawan = new FinalCheck("Pawan Priyatham");
         Pawan.name = "New Name"; // We can do this, i.e. modify the object;
         // Pawan = new FinalCheck("New Name"); // But we can't do this, i.e. change the object;
-
-
-
     }
 }
 
@@ -104,6 +101,7 @@ class FinalCheck {
         this.name = name;
     }
 
+//    Garbage Collection, in Java happens automatically, but we can specify what happens when an object is being destroyed.
 //    @Override
 //    protected void finalize() throws Throwable{ // Deprecated
 //        System.out.println("Object is Destroyed");
