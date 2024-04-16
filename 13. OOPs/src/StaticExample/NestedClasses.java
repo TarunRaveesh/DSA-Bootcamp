@@ -7,6 +7,16 @@ public class NestedClasses {
         public Test(String name) {
             this.name = name;
         }
+
+        // If u directly print the object of the 'Test' class, we will get a java in-built toString() expression.
+        // we can override it using annotations.
+
+        @Override
+        public String toString() {
+            return "Test{" +
+                    "name='" + name + '\'' +
+                    '}';
+        }
     }
 
     public static void main(String[] args) {
@@ -17,5 +27,6 @@ public class NestedClasses {
 
         System.out.println(obj1.name);
         System.out.println(obj2.name);
-    }
+        System.out.println(obj1); // Prints implementation of toString() specified in the class rather than Java default one;
+     }
 }

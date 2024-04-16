@@ -7,6 +7,7 @@ public class ClassObject {
         Student Tarun = new Student(16, "Tarun Raveesh", 96.8f);
         Student Rahul = new Student(20, "Rahul Naik", 92.5f);
 
+        // The . operator just binds the instance variables and instance methods with the reference variable;
         System.out.println(Tarun.rno);
         System.out.println(Tarun.name);
         System.out.println(Tarun.marks);

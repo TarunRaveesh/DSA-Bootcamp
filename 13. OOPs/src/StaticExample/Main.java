@@ -1,6 +1,6 @@
 package StaticExample;
 
-public class StaticMain {
+public class Main {
     public static void main(String[] args) { // The 'main' method is static bcz it is the first thing that Java runs,
         // so we must be able to run it without creating an object of the class that has the 'main method'. Hence, basically
         // a static variable or a method is a property of the class instead of the object.
@@ -18,7 +18,7 @@ public class StaticMain {
         //But fun2 is also non-static, and its object will be definitely created in the static main method
         // which in turn which will also be used by greeting() like below:
         System.out.print("Non-Static Method inside Non-Static Method: ");
-        StaticMain obj2 = new StaticMain();
+        Main obj2 = new Main();
         obj2.fun2();
     }
 
@@ -27,7 +27,7 @@ public class StaticMain {
         // greeting(); // Can't use it inside this static function as this method is non-static and requires an instance
 
         // Cannot access non-static elements without referencing their instances in a static context
-        StaticMain obj = new StaticMain();
+        Main obj = new Main();
         obj.greeting();
     }
 
