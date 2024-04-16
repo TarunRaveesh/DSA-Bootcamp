@@ -42,12 +42,19 @@ public class ClassObject {
 
         // 'final' Keyword - Just fixes the value for a variable, object, class, etc.
         final int fixed = 2;
-//        fixed = 3; // Not possible
+        // fixed = 3; // Not possible
+
+        final FinalCheck Pawan = new FinalCheck("Pawan Priyatham");
+        Pawan.name = "New Name"; // We can do this, i.e. modify the object;
+        // Pawan = new FinalCheck("New Name"); // But we can't do this, i.e. change the object;
+
+
+
     }
 }
 
 class Student {
-    int rno;
+    int rno; // Instance variables in a class are initialized to their primitive default values
     String name;
     float marks;
 
@@ -93,5 +100,21 @@ class FinalCheck {
     final int num = 10;
     String name;
 
+    public FinalCheck(String name) {
+        this.name = name;
+    }
 
+//    @Override
+//    protected void finalize() throws Throwable{ // Deprecated
+//        System.out.println("Object is Destroyed");
+//    }
+
+//    public void garbageCollection() {
+//    The try-with-resource block must be inside a method
+//        try (Resource resource = new Resource()) { // Resource is something of the given problem's context
+//            // Use the resource
+//        } catch (Exception e) {
+//            // Handle any exceptions
+//        }
+//    }
 }
