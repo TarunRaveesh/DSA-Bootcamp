@@ -8,6 +8,12 @@ public class Human {
     static int population; // Independent of Objects
 
     // We can create 'static' methods as well as variables
+    // For eg:
+    static void message() {
+        System.out.println("Hello");
+        // this.age, we can't use 'this' keyword in a static method obviously bcz it basically represents objects,
+        // but as we know a static method has nothing to do with objects
+    }
 
     public Human(int age, String name, int salary, boolean married) {
         this.age = age;
