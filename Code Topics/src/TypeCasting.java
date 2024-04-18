@@ -16,6 +16,12 @@ public class TypeCasting {
         int num = (int)(34.45f);
         System.out.println(num);
 
+        String s = "200";
+        //Converting String into int using Integer.parseInt()
+        int i = Integer.parseInt(s);
+        //Printing value of i
+        System.out.println(i);
+
         int a = 258;
         byte b = (byte)(a);  // 258 % 256 = 2
         System.out.println(b);
