@@ -9,9 +9,11 @@ public class Main {
         boxes[3] = new Box(boxes[2]);
 
         for (Box box : boxes) {
-            System.out.println(box.l + " " + box.w + " " + box.h);
+            System.out.println(box.l + " " + box.b + " " + box.h);
         }
 
+        BoxWeight inBox = new BoxWeight();
+        System.out.println(inBox.h + " " + inBox.w);
 
     }
 }
