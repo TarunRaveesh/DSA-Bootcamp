@@ -11,5 +11,7 @@ public class Main {
         for (Box box : boxes) {
             System.out.println(box.l + " " + box.w + " " + box.h);
         }
+
+
     }
 }
