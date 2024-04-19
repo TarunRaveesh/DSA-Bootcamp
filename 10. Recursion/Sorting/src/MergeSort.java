@@ -20,23 +20,16 @@ public class MergeSort {
         int i = 0, j = 0, k = 0;
         while(i < a.length && j < b.length) {
             if(a[i] < b[j]) {
-                m[k] = a[i];
-                i++;
+                m[k++] = a[i++];
             } else {
-                m[k] = b[j];
-                j++;
+                m[k++] = b[j++];
             }
-            k++;
         }
         while(i < a.length) {
-            m[k] = a[i];
-            k++;
-            i++;
+            m[k++] = a[i++];
         }
         while(j < b.length) {
-            m[k] = b[j];
-            k++;
-            j++;
+            m[k++] = b[j++];
         }
         return m;
     }

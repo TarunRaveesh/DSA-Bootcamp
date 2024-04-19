@@ -15,5 +15,14 @@ public class Main {
         BoxWeight inBox = new BoxWeight();
         System.out.println(inBox.h + " " + inBox.w);
 
+        Box funBox = new BoxWeight(3, 4, 6, 7);
+        // The members accessible by the funBox variable is determined by the type of the 'Reference Variable' i.e. 'Box' here,
+        // and not the type of the object i.e. BoxWeight
+        System.out.println(funBox.b);
+        // System.out.println(funBox.w);
+
+        // We can't have a 'child class reference variable' pointing to a 'parent class object', bcz the parent class will not
+        // know the variables initialized in the child class
+        // BoxWeight funBox2 = new Box(5, 6, 8); // Not Possible
     }
 }

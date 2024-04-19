@@ -1,7 +1,7 @@
 package Inheritance;
 
-public class Box {
-    int l;
+public class Box { // Object of Parent class cannot inherit child class properties
+    int l; // A private
     int b;
     int h;
 
