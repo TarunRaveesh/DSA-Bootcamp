@@ -1,11 +1,19 @@
 package Properties.Inheritance;
 
-public class Box { // Object of Parent class cannot inherit child class properties
+//public final class Box {}
+// A final class cannot be inherited, also if class is final all it's methods will also be final.
+
+public class Box {
+    // Object of Parent class cannot inherit child class properties
     int l; // A private
     int b;
     int h;
 //  int w; // If same variable exits in both parent and child, then we can use 'super.w'
            // in the child class to call the parent class variable
+
+    public static void greeting() {
+        System.out.println("Hey! I'm from Box Class");
+    }
 
     public Box() { // This class doesn't inherit any class hence super keyword which works in a linear fation will call the java
 //        super(); // Object class, default for every java class

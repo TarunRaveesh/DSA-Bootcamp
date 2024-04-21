@@ -1,7 +1,7 @@
 package Properties.Polymorphism;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // Polymorphism doesn't apply to instance variables
         Shapes shape = new Shapes();
         Circle circle = new Circle(); // In overriding, the type of method being called from depends on type of object
         Shapes triangle = new Triangle(); // Here, the reference variable, i.e. LHS only defines which method or variable

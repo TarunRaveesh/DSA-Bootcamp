@@ -7,6 +7,11 @@ public class BoxWeight extends Box{ // An inherited class cannot inherit private
         this.w = -1;
     }
 
+//    @Override - Error, Static methods cannot be overridden, but can be inherited
+    public static void greeting() {
+        System.out.println("Hey! I'm from BoxWeight Class");
+    }
+
     public BoxWeight(int l, int b, int h, int w) {
         super(l, b, h); // What's this? - Used to call parent class constructor
         // Initializes values present in parent class in the inherited class

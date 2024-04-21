@@ -26,5 +26,13 @@ public class Main {
         // BoxWeight funBox2 = new Box(5, 6, 8); // Not Possible
 
         BoxPrice costBox = new BoxPrice(5, 7, 8, 10, 350);
+
+        // Static Method Overriding
+        Box.greeting();
+        // Box box = new BoxWeight();
+        // box.greeting(); // YOU CAN INHERIT BUT U CAN'T OVERRIDE
+        BoxWeight.greeting(); // will call the same static greeting method
+
+        // Overriding depends on object, static doesn't depend on object, so a static method can't be overridden.
     }
 }
