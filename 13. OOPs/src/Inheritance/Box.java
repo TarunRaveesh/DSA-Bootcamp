@@ -4,6 +4,8 @@ public class Box { // Object of Parent class cannot inherit child class properti
     int l; // A private
     int b;
     int h;
+//  int w; // If same variable exits in both parent and child, then we can use 'super.w'
+           // in the child class to call the parent class variable
 
     public Box() {
         l = -1;

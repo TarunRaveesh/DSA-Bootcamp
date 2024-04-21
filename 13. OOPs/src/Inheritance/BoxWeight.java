@@ -10,7 +10,8 @@ public class BoxWeight extends Box{ // An inherited class cannot inherit private
     public BoxWeight(int l, int b, int h, int w) {
         super(l, b, h); // What's this? - Used to call parent class constructor
         // Initializes values present in parent class in the inherited class
-        // Also super will call the parent class constructor hence it will also initialize a private variable in the parent class but can't be used here
+        // Also super will call the parent class constructor hence it will also initialize a private variable from the
+        // parent class while calling the constructor here, but it can't be used.
         this.w = w;
     }
 }
