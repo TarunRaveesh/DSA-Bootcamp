@@ -1,4 +1,4 @@
-package Inheritance;
+package Properties.Inheritance;
 
 public class Box { // Object of Parent class cannot inherit child class properties
     int l; // A private
@@ -7,7 +7,8 @@ public class Box { // Object of Parent class cannot inherit child class properti
 //  int w; // If same variable exits in both parent and child, then we can use 'super.w'
            // in the child class to call the parent class variable
 
-    public Box() {
+    public Box() { // This class doesn't inherit any class hence super keyword which works in a linear fation will call the java
+//        super(); // Object class, default for every java class
         l = -1;
         b = -1;
         h = -1;

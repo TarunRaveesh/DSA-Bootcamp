@@ -1,8 +1,8 @@
-package Singleton;
+package ClassObject.Singleton;
 
 public class Main {
     public static void main(String[] args) {
-        Singleton obj1 = Singleton.getInstance(); // We can't call the constructor, hence can't make objects with 'new Singleton();'.
+        Singleton obj1 = Singleton.getInstance(); // We can't call the constructor, hence can't make objects with 'new ClassObject.Singleton();'.
         Singleton obj2 = Singleton.getInstance();
         Singleton obj3 = Singleton.getInstance();
         System.out.println(obj1);

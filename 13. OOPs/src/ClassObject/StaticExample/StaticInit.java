@@ -1,4 +1,4 @@
-package StaticExample;
+package ClassObject.StaticExample;
 // Demo to show initialization of static variables
 public class StaticInit {
     static int a = 4;

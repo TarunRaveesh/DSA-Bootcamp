@@ -1,4 +1,4 @@
-package Inheritance;
+package Properties.Inheritance;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,5 +24,7 @@ public class Main {
         // We can't have a 'child class reference variable' pointing to a 'parent class object', bcz the parent class will not
         // know the variables initialized in the child class
         // BoxWeight funBox2 = new Box(5, 6, 8); // Not Possible
+
+        BoxPrice costBox = new BoxPrice(5, 7, 8, 10, 350);
     }
 }

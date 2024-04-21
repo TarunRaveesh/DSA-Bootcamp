@@ -1,7 +1,9 @@
+package ClassObject;
+
 public class ClassObject {
     public static void main(String[] args) {
         // 'new' Keyword does Dynamic Memory Allocation, i.e. instantiates the object and allots memory at runtime
-        // and Student() is the default constructor, but we can modify its parameters and values of the instance
+        // and ClassObject.Student() is the default constructor, but we can modify its parameters and values of the instance
         // variables of the class by initializing them as local variables.
 
         Student Tarun = new Student(16, "Tarun Raveesh", 96.8f);
@@ -47,7 +49,7 @@ public class ClassObject {
 
         final FinalCheck Pawan = new FinalCheck("Pawan Priyatham");
         Pawan.name = "New Name"; // We can do this, i.e. modify the object;
-        // Pawan = new FinalCheck("New Name"); // But we can't do this, i.e. change the object;
+        // Pawan = new ClassObject.FinalCheck("New Name"); // But we can't do this, i.e. change the object;
     }
 }
 
@@ -64,7 +66,7 @@ class Student {
         this.name = name;
     }
 
-//    Student() {
+//    ClassObject.Student() {
 //        rno = 0;
 //        name = "Default";
 //        marks = 00.00f;

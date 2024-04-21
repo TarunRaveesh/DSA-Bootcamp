@@ -1,5 +1,5 @@
-package Singleton;
-// Singleton is a design pattern that assures a 'single instance' (only 1 object) of a Class for the lifetime of an application.
+package ClassObject.Singleton;
+// ClassObject.Singleton is a design pattern that assures a 'single instance' (only 1 object) of a Class for the lifetime of an application.
 public class Singleton {
     private static Singleton instance;
 

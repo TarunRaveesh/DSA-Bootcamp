@@ -1,4 +1,4 @@
-package StaticExample;
+package ClassObject.StaticExample;
 
 public class Main {
     public static void main(String[] args) { // The 'main' method is static bcz it is the first thing that Java runs,

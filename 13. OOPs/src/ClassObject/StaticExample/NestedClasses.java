@@ -1,4 +1,4 @@
-package StaticExample;
+package ClassObject.StaticExample;
 
 public class NestedClasses {
     // This child class has to be static else it will be dependent on the objects of the parent class.
