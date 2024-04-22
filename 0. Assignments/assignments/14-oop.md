@@ -27,8 +27,8 @@
 - [Java constructor returns a value, but what?](https://www.javatpoint.com/java-constructor-returns-a-value-but-what) `Javatpoint`
 - [What is covariant return type?](https://www.javatpoint.com/covariant-return-type) `Javatpoint`
 - [Private classes and singleton classes in Java](https://www.geeksforgeeks.org/private-constructors-and-singleton-classes-in-java/) `GFG`
-- [How to prevent Singleton Pattern from Reflection, Serialization and Cloning?](https://www.geeksforgeeks.org/prevent-singleton-pattern-reflection-serialization-cloning/) `GFG`
-- [Double-Check Locking For Singleton Class](https://www.geeksforgeeks.org/java-program-to-demonstrate-the-double-check-locking-for-singleton-class/) `GFG`
+- [How to prevent ClassObject.Singleton Pattern from Reflection, Serialization and Cloning?](https://www.geeksforgeeks.org/prevent-singleton-pattern-reflection-serialization-cloning/) `GFG`
+- [Double-Check Locking For ClassObject.Singleton Class](https://www.geeksforgeeks.org/java-program-to-demonstrate-the-double-check-locking-for-singleton-class/) `GFG`
 
 # Practice Problems
 - [Inheritance I](https://www.hackerrank.com/challenges/java-inheritance-1/problem?isFullScreen=true) `HackerRank`
