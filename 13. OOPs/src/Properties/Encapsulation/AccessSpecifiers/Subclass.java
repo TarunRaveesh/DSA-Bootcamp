@@ -7,6 +7,6 @@ public class Subclass extends Access{
 
     public static void main(String[] args) {
         Subclass obj = new Subclass(4, 16, "Checking in Subclass"); // Same Package
-        int n = obj.var;
+        int n = obj.var; // Can access Default;
     }
 }
