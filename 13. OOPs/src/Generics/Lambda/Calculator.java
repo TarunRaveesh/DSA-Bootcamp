@@ -14,7 +14,7 @@ public class Calculator {
         System.out.println("Div = " + Calculator.operate(96, 4, div));
     }
 
-    int operate(int a, int b, Operation op) {
+    int operate(int a, int b, Operation op) { // Consumer with two variables
         return op.operation(a, b);
     }
 }
