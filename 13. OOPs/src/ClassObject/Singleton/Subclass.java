@@ -14,7 +14,7 @@ public class Subclass extends Access{ // For checking Access Specifiers
         // extending it, hence only the Subclass (Child) is allowed to access a 'protected' attribute.
 
         String s = obj.name; // Can access 'protected'
-        // int n = obj.var; // Can't access 'default'.
+        // int n = obj.var; // Can't access 'default'
         // int n = obj.num; //Can't access 'private'
     }
 }
