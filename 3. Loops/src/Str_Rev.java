@@ -8,7 +8,7 @@ public class Str_Rev {
         char[] original = s.toCharArray();
         char[] reverse = new char[original.length];
 
-        for (int i = 0; i < original.length; i++) {
+        for (int i = 0; i != 2; i++) {
             reverse[i] = original[original.length - i - 1];
         }
         String r = new String(reverse);
