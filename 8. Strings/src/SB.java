@@ -5,6 +5,7 @@ public class SB {
             char ch = (char) ('a' + i);
             builder.append(i + 1).append(ch).append(" ");
         }
+        System.out.println(builder.length());
         System.out.println(builder.toString());
     }
 }

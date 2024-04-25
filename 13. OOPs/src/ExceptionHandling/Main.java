@@ -8,6 +8,8 @@ public class Main {
             System.out.println(a/b);
         } catch (Exception e) {
             System.out.println(e.getMessage());
+        } finally {
+            System.out.println("This will always Execute.");
         }
     }
 }
