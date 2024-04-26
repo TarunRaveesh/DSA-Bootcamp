@@ -5,7 +5,7 @@ public class Human {
     String name;
     int salary;
     boolean married;
-    static int population; // Independent of Objects
+    static int population; // Static independent of Objects, it becomes a class variable
 
     // If we put an instance variable as static, all the objects will have the same value of it,
     // specifically, the latest initialized value of it
