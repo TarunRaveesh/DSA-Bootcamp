@@ -31,9 +31,8 @@ public class TypeCasting {
         byte y = 20;
         byte z = 10;
         int c = x * y / z;
-        System.out.println(c);
+        System.out.println(c); // converts to int
 
 //      Also refer notes.
-
     }
 }
