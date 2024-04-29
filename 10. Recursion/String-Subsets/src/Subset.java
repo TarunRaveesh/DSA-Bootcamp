@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-public class Subset { //Iteration // Time : O(n.2^n) // Space : O(n.2^n) ------> 2^n is for the no of subsets for both
-    // n for time is the no of times the outer loop iterates, i.e. no of elements in the original array
-    // n for space is bcz size of the subsets will be an auxiliary space of n since the last subset will contain the initial array too
+public class Subset { //Iteration // Time : O(n.2^n) // Space : O(n.2^n) ------> 2^n is for the no of
+    // subsets for both n for time is the no of times the outer loop iterates, i.e. no of elements in
+    // the original array n for space is bcz size of the subsets will be an auxiliary space of n since
+    // the last subset will contain the initial array too
     public static void main(String[] args) {
         int[] arr = {1, 2, 3};
         List<List<Integer>> ans = subset(arr);

@@ -10,5 +10,8 @@ public class Methods {
         System.out.println(name.lastIndexOf('R'));
         System.out.println("    Tarun   ".strip());
         System.out.println(Arrays.toString(name.split(" ")));
+        System.out.println(name.substring(0, 2));
+        System.out.println(name.indexOf('a'));
+        System.out.println(name.lastIndexOf('a'));
     }
 }
