@@ -2,7 +2,6 @@ import java.util.List;
 import java.util.Objects;
 
 public class MatchCount {
-
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         int count = 0;
         int i = -1;

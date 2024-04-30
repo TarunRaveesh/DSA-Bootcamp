@@ -22,8 +22,7 @@ public class Array2D {
             System.out.println(Arrays.toString(a));
         }
 
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(Arrays.deepToString(arr));
-        }
+        // Direct 2D array Printing - Arrays.deepToString()
+        System.out.println(Arrays.deepToString(arr));
     }
 }
