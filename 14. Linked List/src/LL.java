@@ -1,15 +1,16 @@
-public class CustomLinkedList {
+public class LL {
     private Node head;
     private Node tail;
     private int size;
 
-    public CustomLinkedList() {
+    public LL() {
         this.size = 0;
     }
 
     private static class Node {
         private final int value;
         private Node next;
+
 
         public Node(int value) {
             this.value = value;
@@ -20,6 +21,7 @@ public class CustomLinkedList {
             this.next = next;
         }
     }
+
     // Get length
     public int length() {
         return size;
