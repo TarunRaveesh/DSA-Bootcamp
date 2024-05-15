@@ -36,6 +36,7 @@ public class Main {
 
         dll.addEnd(12);
         dll.add(14, 7);
+        dll.add(14, 12);
 
         dll.display();
         System.out.println(dll.length());
