@@ -3,13 +3,13 @@ package ClassObject;
 public class ClassObject {
     public static void main(String[] args) {
         // 'new' Keyword does Dynamic Memory Allocation, i.e. instantiates the object and allots memory at runtime
-        // and ClassObject.Student() is the default constructor, but we can modify its parameters and values of the instance
-        // variables of the class by initializing them as local variables.
+        // and ClassObject.Student() is the default constructor, but we can modify its parameters and values based on
+        // the instance variables of the class by initializing them as local variables inside the constructor definition.
 
         Student Tarun = new Student(16, "Tarun Raveesh", 96.8f);
         Student Rahul = new Student(20, "Rahul Naik", 92.5f);
 
-        // The . operator just binds the instance variables and instance methods with the reference variable;
+        // The . operator just binds the instance variables and instance methods with the reference variable(Object);
         System.out.println(Tarun.rno);
         System.out.println(Tarun.name);
         System.out.println(Tarun.marks);
