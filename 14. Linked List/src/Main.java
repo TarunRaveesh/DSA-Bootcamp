@@ -28,6 +28,7 @@ public class Main {
 
         System.out.println(list.remove(list.length() - 1));
         list.display();
+        System.out.println();
 
         System.out.println("Doubly Linked List");
         DLL dll = new DLL();
@@ -42,5 +43,16 @@ public class Main {
 
         dll.display();
         System.out.println(dll.length());
+        System.out.println();
+
+        System.out.println("Circular Linked List");
+        CLL cll = new CLL();
+        cll.addEnd(3);
+        cll.addEnd(5);
+        cll.addEnd(7);
+        cll.addEnd(9);
+        cll.display();
+        cll.remove(7);
+        cll.display();
     }
 }
