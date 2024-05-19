@@ -85,10 +85,15 @@ class Student {
         this.marks = other.marks;
     }
 
+    static Student old = null;
     Student() {
-        //this is how u call a constructor inside a constructor - Constructor Chaining;
-        this(100, "Random 2", 100f);
+        // this is how u call a constructor inside a constructor - Constructor Chaining;
+        this(old); // Parameters should be of the type of existing constructor
     }
+    // OR
+    // Student() {
+    //    this(100, "Random 2", 100f);
+    // }
 }
 
 // 'final' Keyword
