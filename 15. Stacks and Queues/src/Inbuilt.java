@@ -1,6 +1,4 @@
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class Inbuilt {
     public static void main(String[] args) {
@@ -29,5 +27,8 @@ public class Inbuilt {
         System.out.println("Peek: " + queue.peek()); // Gives head (first element) of queue, without removing it
         System.out.println(queue.remove() + " ");
         System.out.println(queue.remove() + " "); // FIFO
+
+        System.out.println("Deque");
+        Deque<Integer> deque = new ArrayDeque<>();
     }
 }
