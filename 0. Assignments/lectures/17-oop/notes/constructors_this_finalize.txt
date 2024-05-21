@@ -45,7 +45,7 @@ For example, output of following program given below is:
 Base Class Constructor Called
 Derived Class Constructor Called
 
- // filename: Main.java
+ // filename: BinaryTree.Main.java
 class Base {
   Base() {
     System.out.println("Base Class Constructor Called ");
@@ -58,7 +58,7 @@ class Derived extends Base {
   }
 }
 
-public class Main {
+public class BinaryTree.Main {
   public static void main(String[] args) {
     Derived d = new Derived();
   }
