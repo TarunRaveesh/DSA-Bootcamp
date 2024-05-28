@@ -28,5 +28,5 @@ public class NestedClasses {
         System.out.println(obj1.name);
         System.out.println(obj2.name);
         System.out.println(obj1); // Prints implementation of toString() specified in the class rather than Java default one;
-     }
+    }
 }
