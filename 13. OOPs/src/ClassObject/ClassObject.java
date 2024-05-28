@@ -39,7 +39,7 @@ public class ClassObject {
         Student one = new Student();
         Student two = one;
 
-        one.name = "New Name"; // Also updates in the object two since it is referring to the same object in the heap as one
+        one.name = "StringPool"; // Also updates in the object two since it is referring to the same object in the heap as one
         System.out.println(one.name);
         System.out.println(two.name);
 
@@ -49,6 +49,8 @@ public class ClassObject {
 
         final FinalCheck Pawan = new FinalCheck("Pawan Priyatham");
         Pawan.name = "New Name"; // We can do this, i.e. modify the object;
+        System.out.println(Pawan.name);
+        System.out.println(Pawan.num);
         // Pawan = new FinalCheck("New Name"); // But we can't do this, i.e. change the object;
     }
 }
@@ -85,10 +87,10 @@ class Student {
         this.marks = other.marks;
     }
 
-    static Student old = null;
+//    static Student old = null;
     Student() {
         // this is how u call a constructor inside a constructor - Constructor Chaining;
-        this(old); // Parameters should be of the type of existing constructor
+//        this(old); // Parameters should be of the type of existing constructor
     }
     // OR
     // Student() {
