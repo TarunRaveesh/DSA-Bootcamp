@@ -9,7 +9,7 @@ public class Main {
         Human pawan = new Human(19,"Pawan", 150000, false);
         Human suhail = new Human(22, "Suhail", 200000, true);
 
-        System.out.println(Human.population); // Can also use, obj.population, bu t this is correct convention
+        System.out.println(Human.population); // Can also use, obj.population, but this is correct convention
 
         // greeting(); // Can't use a non static method inside a static method see fun() example
         System.out.print("Non-Static Method inside Static Method: ");
