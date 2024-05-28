@@ -58,6 +58,12 @@ class Student {
     String name;
     float marks;
 
+//    ClassObject.Student() {
+//        rno = 0;
+//        name = "Default";
+//        marks = 00.00f;
+//    }
+
     void greeting() {
         System.out.println("Hello! My name is " + name);
     }
@@ -65,12 +71,6 @@ class Student {
     void changeName(String name) {
         this.name = name;
     }
-
-//    ClassObject.Student() {
-//        rno = 0;
-//        name = "Default";
-//        marks = 00.00f;
-//    }
 
     // 'this' Keyword allows us to generally access every object of the class
     Student (int roll, String name, float marks) {
