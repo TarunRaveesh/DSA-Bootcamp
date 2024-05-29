@@ -2,7 +2,7 @@ package ClassObject.Singleton;
 import Properties.Encapsulation.AccessSpecifiers.Access;
 import org.w3c.dom.ls.LSOutput;
 
-// ClassObject.Singleton is a design pattern that assures a 'single instance' (only 1 object) of a Class for the lifetime of an application.
+// Singleton is a design pattern that assures a 'single instance' (only 1 object) of a Class for the lifetime of an application.
 public class Singleton {
     private static Singleton instance;
 
