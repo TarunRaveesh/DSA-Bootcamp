@@ -1,6 +1,6 @@
 package Properties.Inheritance;
 
-public class BoxColor extends BoxWeight{ // Hierarchical Inheritance: Box -> BoxWeight - BoxPrice
+public class BoxColor extends BoxWeight{ // Hierarchical Inheritance: Box -> BoxWeight --> BoxPrice
 //                                                                                |
 //                                                                             BoxColor
 

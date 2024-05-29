@@ -21,6 +21,6 @@ public class BoxWeight extends Box{ // An inherited class cannot inherit private
     }
 
     public BoxWeight(BoxWeight old) {
-        super(old); // This calls the Box(old) (Parent CLass) constructor
+        super(old); // This calls the Box(old) (Parent Class) constructor
     }
 }
