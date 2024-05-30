@@ -1,6 +1,6 @@
 public class NQueens {
     public static void main(String[] args) {
-        int row = 4, col = 4;
+        int row = 5, col = 5;
         boolean[][] board = new boolean[row][col];
         System.out.println(queens(board, 0));
     }
