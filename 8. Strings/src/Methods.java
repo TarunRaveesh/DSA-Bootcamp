@@ -13,7 +13,9 @@ public class Methods {
         System.out.println(name.substring(0, 2));
         System.out.println(name.indexOf('a'));
         System.out.println(name.lastIndexOf('a'));
+        for (int i = 0; i < name.length(); i++) {
+            System.out.println(name.substring(i));
+        }
 
-        System.out.println(name.split(" "));
     }
 }
