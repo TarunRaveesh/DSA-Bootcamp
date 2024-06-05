@@ -1,8 +1,7 @@
 package BinarySearchTree;
 
 public class BST {
-
-    // Node class representing a single node in the binary search tree
+    // Node class represents a single node in the binary search tree
     private static class Node {
         int value;
         Node left;
