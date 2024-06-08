@@ -1,4 +1,4 @@
-package MenuRecommendation;
+package ExceptionHandling.MenuRecommendation;
 
 import java.util.Scanner;
 
