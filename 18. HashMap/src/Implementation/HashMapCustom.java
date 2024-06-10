@@ -25,6 +25,11 @@ public class HashMapCustom <K, V> {
             this.key = key;
             this.value = value;
         }
+
+        @Override
+        public String toString() {
+            return (key + "=" + value);
+        }
     }
 
     public void put(K key, V value) {
@@ -95,21 +100,20 @@ public class HashMapCustom <K, V> {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-
         builder.append("[");
-        for(LinkedList<Entity> innerList : list) {
-            for(Entity item : innerList) {
-                builder.append(item.key);
-                builder.append(" = ");
-                builder.append(item.value);
-                builder.append(", ");
+        boolean first = true;
+        for (LinkedList<Entity> innerList : list) {
+            for (Entity<K, V> item : innerList) {
+                if (!first) {
+                    builder.append(", ");
+                }
+                builder.append(item);
+                first = false;
             }
         }
         builder.append("]");
-
         return builder.toString();
     }
-
 
     public static void main(String[] args) {
         HashMapCustom<String, String> map = new HashMapCustom<>();
