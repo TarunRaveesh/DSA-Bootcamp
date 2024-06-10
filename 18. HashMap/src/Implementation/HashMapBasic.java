@@ -27,7 +27,7 @@ public class HashMapBasic <K, V> {
 
     // Put
     public void put(K key, V value) {
-        int hash = key.hashCode() % table.length;
+        int hash = Math.abs(key.hashCode() % table.length);
         table[hash] = new Entity<>(key, value); // Will override if same hash (Not Optimized)
     }
 
