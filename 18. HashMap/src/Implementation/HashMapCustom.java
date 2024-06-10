@@ -94,7 +94,20 @@ public class HashMapCustom <K, V> {
 
     @Override
     public String toString() {
-        return list.toString();
+        StringBuilder builder = new StringBuilder();
+
+        builder.append("[");
+        for(LinkedList<Entity> innerList : list) {
+            for(Entity item : innerList) {
+                builder.append(item.key);
+                builder.append(" = ");
+                builder.append(item.value);
+                builder.append(", ");
+            }
+        }
+        builder.append("]");
+
+        return builder.toString();
     }
 
 
