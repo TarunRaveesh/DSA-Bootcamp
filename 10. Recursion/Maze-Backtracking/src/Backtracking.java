@@ -22,7 +22,7 @@ public class Backtracking {
         if(!maze[r][c]) {
             return;
         }
-        //I have to block this cell since it will be traversed in this call:
+        // I have to block this cell since it will be traversed in this call:
         maze[r][c] = false;
 
         if(r < maze.length - 1) { // DOWN
