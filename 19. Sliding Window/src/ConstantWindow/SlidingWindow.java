@@ -1,4 +1,4 @@
-package SlidingWindow;
+package ConstantWindow;
 
 public class SlidingWindow {
     public static void main(String[] args) {
