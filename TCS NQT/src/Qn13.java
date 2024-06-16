@@ -14,7 +14,10 @@ public class Qn13 {
         int time = 0;
         while(minHeap.size() > 1) {
             int X = minHeap.poll();
-            int Y = minHeap.poll();
+            int Y = 0;
+            if(!minHeap.isEmpty()) {
+                Y = minHeap.poll();
+            }
             time += X + Y;
             minHeap.add(X + Y);
         }
