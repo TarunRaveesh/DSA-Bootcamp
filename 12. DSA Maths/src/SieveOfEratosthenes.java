@@ -13,7 +13,6 @@ public class SieveOfEratosthenes { // Time: O(log(log(n)) Space:O(n)
                 for(int j = i * i; j <= n; j += i) { // Multiples of Prime are being ignored by setting their
                                                      // respective index value to false
 
-
                     primes[j] = true;
                 }
             }

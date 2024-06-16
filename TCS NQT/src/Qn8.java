@@ -9,6 +9,5 @@ public class Qn8 {
             n /= 10;
         }
         System.out.println(res);
-        System.out.println('1' - '0');
     }
 }
