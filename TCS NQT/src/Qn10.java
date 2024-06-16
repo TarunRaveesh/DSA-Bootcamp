@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Qn10 {
     public static void main(String[] args) {
@@ -20,7 +19,7 @@ public class Qn10 {
         System.out.println(count - 1); // removing 2
     }
 
-    static void allPrimes(int n, ArrayList<Integer> list) {
+    static void allPrimes(int n, ArrayList<Integer> list) { // Sieve of Eratosthenes
         boolean[] primes = new boolean[n + 1];
         for (int i = 2; i * i < n; i++) {
             if(!primes[i]) {
