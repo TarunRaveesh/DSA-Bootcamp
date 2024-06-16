@@ -11,7 +11,7 @@ public class rotArray {
             if (m < e && arr[m] > arr[m + 1]) return m;
             if (m > s && arr[m - 1] > arr[m]) return m - 1;
 
-            if (s >= m) e = m - 1;
+            if (arr[s] >= arr[m]) e = m - 1;
             else s = m + 1;
         }
         return -1;

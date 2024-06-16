@@ -6,8 +6,8 @@ public class DieHardGCD_LCM {
     }
 
     static int gcd(int a, int b) {
-        if(a == 0) return b;
-        return gcd(a % b, a); // Euclidean Algorithm
+        if(b == 0) return a;
+        return gcd(b, a % b); // Euclidean Algorithm
     }
 
     static int lcm(int a, int b) {
