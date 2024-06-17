@@ -3,7 +3,7 @@ package ConstantWindow;
 public class SlidingWindow {
     public static void main(String[] args) {
         int k = 2;
-        int[] arr = {3, 5, 8, 7, 5, 12, 4};
+        int[] arr = {3, 5, 8, 7, 5, 12, 4, 17};
         System.out.println(constantSlidingWindow(arr, k));
     }
 
