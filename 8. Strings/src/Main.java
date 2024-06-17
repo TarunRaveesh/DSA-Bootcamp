@@ -30,7 +30,7 @@ public class Main {
         System.out.println(Arrays.toString(sent));
 
         String a = "Tarun";
-        String b = "Tarun"; // Both a and b poin to same "Tarun" object in string pool which is inside heap
+        String b = "Tarun"; // Both a and b point to same "Tarun" object in string pool which is inside heap
 
         String c = new String("Tarun");
         String d = new String("Tarun"); // c and d point to different "Tarun" objects created by the new keyword in the
