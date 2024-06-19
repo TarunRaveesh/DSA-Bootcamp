@@ -1,3 +1,5 @@
+package ExamPrep;
+
 import java.util.*;
 
 public class Qn4 {

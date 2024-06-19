@@ -1,3 +1,5 @@
+package ExamPrep;
+
 import java.util.*;
 public class Qn8 {
     public static void main(String[] args) {

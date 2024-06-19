@@ -1,3 +1,5 @@
+package ExamPrep;
+
 import java.util.Scanner;
 public class Qn9 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-// Qns Link - https://prepinsta.com/tcs-nqt/placement-papers/advance/coding/
+package ExamPrep;// Qns Link - https://prepinsta.com/tcs-nqt/placement-papers/advance/coding/
 
 import java.util.*;
 public class Qn1 {
