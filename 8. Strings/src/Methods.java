@@ -16,6 +16,5 @@ public class Methods {
         for (int i = 0; i < name.length(); i++) {
             System.out.println(name.substring(i));
         }
-
     }
 }
