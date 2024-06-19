@@ -7,7 +7,7 @@ public class Main {
         int[] arr = {1,2,3};
         String name = "Tarun";
         ArrayList<Integer> list = new ArrayList<>();
-        LinkedList<Integer> llist = new LinkedList<>();
+        LinkedList<Integer> linkedlist = new LinkedList<>();
         Stack<Integer> stack = new Stack<>();
         Queue<Integer> queue = new LinkedList<>();
         HashMap<Integer, String> map = new HashMap<>();
