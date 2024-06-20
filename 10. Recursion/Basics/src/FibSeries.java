@@ -11,6 +11,6 @@ public class FibSeries {
             return n;
         }
         // Recursive case
-        return fib(n - 1) + fib(n - 2);
+        return fib(n - 1) + fib(n - 2); 
     }
 }
