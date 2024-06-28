@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {1,2,3};
+        int[] arr = {1, 2, 3};
         String name = "Tarun";
         ArrayList<Integer> list = new ArrayList<>();
         LinkedList<Integer> linkedlist = new LinkedList<>();
@@ -23,6 +23,13 @@ public class Main {
         int x = set.iterator().next();
         System.out.println(set);
         System.out.println(x);
-        set.co
+        final var contains = set.contains(3);
+        System.out.println(contains);
+
+        minHeap.add(4);
+        minHeap.add(1);
+        minHeap.add(2);
+
+        System.out.println(minHeap);
     }
 }
