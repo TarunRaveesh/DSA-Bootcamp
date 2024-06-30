@@ -32,7 +32,7 @@ public class HashMapCustom <K, V> {
     }
 
     public int getHash(K key) {
-        return (key.hashCode() & 0x7fffffff) % table.size(); // & with Integer.MAX_VALUE ensure the hash remains +ve
+        return (key.hashCode() & 0x7fffffff) % table.size(); // & with Integer.MAX_VALUE ensures hash remains +ve
     }
 
     public void put(K key, V value) {
