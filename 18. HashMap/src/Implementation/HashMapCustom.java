@@ -3,17 +3,16 @@ package Implementation;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-@SuppressWarnings("ALL")
 public class HashMapCustom <K, V> {
-    private ArrayList<LinkedList<Entity>> list;
+    private ArrayList<LinkedList<Entity<K, V>>> table;
     private int size = 0;
-    private final float lf = 0.5f;
+    protected final float lf = 0.75f;
 
     public HashMapCustom() {
-        int DEFAULT_SIZE = 10;
-        this.list = new ArrayList<>();
+        final int DEFAULT_SIZE = 10;
+        this.table = new ArrayList<>();
         for (int i = 0; i < DEFAULT_SIZE; i++) {
-            list.add(new LinkedList<>());
+            table.add(new LinkedList<>());
         }
     }
 
@@ -32,19 +31,22 @@ public class HashMapCustom <K, V> {
         }
     }
 
-    public void put(K key, V value) {
-        int hash = Math.abs(key.hashCode() % list.size());
-        LinkedList<Entity> innerList = list.get(hash);
+    public int getHash(K key) {
+        return (key.hashCode() & 0x7fffffff) % table.size(); // & with Integer.MAX_VALUE ensures hash remains +ve
+    }
 
-        for (Entity item : innerList) {
+    public void put(K key, V value) {
+        if ((float) (size + 1) / table.size() > lf) { // +1 for next element being put
+            reHash();
+        }
+        int hash = getHash(key);
+        LinkedList<Entity<K, V>> innerList = table.get(hash);
+
+        for (Entity<K, V> item : innerList) {
             if (item != null && item.key.equals(key)) {
                 item.value = value;
                 return;
             }
-        }
-
-        if ((float) (size) / list.size() > lf) {
-            reHash();
         }
 
         innerList.add(new Entity<>(key, value));
@@ -52,45 +54,60 @@ public class HashMapCustom <K, V> {
     }
 
     private void reHash() {
-        ArrayList<LinkedList<Entity>> old = list;
-        list = new ArrayList<>();
+        ArrayList<LinkedList<Entity<K, V>>> old = table;
+        table = new ArrayList<>();
 
         for (int i = 0; i < old.size() * 2; i++) {
-            list.add(new LinkedList<>());
+            table.add(new LinkedList<>());
         }
 
-        for (LinkedList<Entity> entries : old) {
-            for (Entity entry : entries) {
-                put((K) entry.key, (V) entry.value);
+        size = 0;
+        for (LinkedList<Entity<K, V>> entries : old) {
+            for (Entity<K, V> entry : entries) {
+                put(entry.key, entry.value);
             }
         }
     }
 
     public V get(K key) {
-        int hash = Math.abs(key.hashCode() % list.size());
-        LinkedList<Entity> innerList = list.get(hash);
 
-        for (Entity item : innerList) {
+        if (key == null) {
+            throw new IllegalArgumentException("Key cannot be null");
+        }
+
+        int hash = getHash(key);
+        LinkedList<Entity<K, V>> innerList = table.get(hash);
+
+        for (Entity<K, V> item : innerList) {
             if (item != null && item.key.equals(key)) {
-                return (V) item.value;
+                return item.value;
             }
         }
         return null;
     }
 
     public V remove(K key) {
-        int hash = Math.abs(key.hashCode() % list.size());
-        LinkedList<Entity> innerList = list.get(hash);
+        if (key == null) {
+            throw new IllegalArgumentException("Key cannot be null");
+        }
 
-        Entity target = null;
-        for (Entity item : innerList) {
+        int hash = getHash(key);
+        LinkedList<Entity<K, V>> innerList = table.get(hash);
+
+        Entity<K, V> target = null;
+        for (Entity<K, V> item : innerList) {
             if (item != null && item.key.equals(key)) {
                 target = item;
                 break;
             }
         }
-        innerList.remove(target);
-        return (V) target.value;
+        if (target != null) {
+            innerList.remove(target);
+            size--;
+            return target.value;
+        } else {
+            return null;
+        }
     }
 
     public boolean containsKey(K key) {
@@ -102,7 +119,7 @@ public class HashMapCustom <K, V> {
         StringBuilder builder = new StringBuilder();
         builder.append("[");
         boolean first = true;
-        for (LinkedList<Entity> innerList : list) {
+        for (LinkedList<Entity<K, V>> innerList : table) {
             for (Entity<K, V> item : innerList) {
                 if (!first) {
                     builder.append(", ");
@@ -124,6 +141,8 @@ public class HashMapCustom <K, V> {
         map.put("A", "Suhail");
         map.put("D", "Pawan");
 
+        System.out.println(map.remove("A"));
+        System.out.println(map.containsKey("C"));
         System.out.println(map);
     }
 }
