@@ -39,6 +39,7 @@ public class HashMapCustom <K, V> {
         if ((float) (size + 1) / table.size() > lf) { // +1 for next element being put
             reHash();
         }
+
         int hash = getHash(key);
         LinkedList<Entity<K, V>> innerList = table.get(hash);
 
