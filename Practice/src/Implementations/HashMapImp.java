@@ -1,5 +1,4 @@
 package Implementations;
-import javax.swing.text.html.parser.Entity;
 import java.util.*;
 
 public class HashMapImp <K, V> {
@@ -27,6 +26,45 @@ public class HashMapImp <K, V> {
         @Override
         public String toString() {
             return (key + " = " + value);
+        }
+    }
+
+    public int getHash(K key) {
+        return (key.hashCode() & 0x7ffffff) % table.size();
+    }
+
+    public void put(K key, V value) {
+        if((float) (size + 1 / table.size()) > LF) {
+            reHash();
+        }
+
+        int hash = getHash(key);
+        LinkedList<Entity<K, V>> innerList = table.get(hash);
+
+        for(Entity<K, V> item : innerList) {
+            if(item != null && item.key.equals(key)) {
+                item.value = value;
+                return;
+            }
+        }
+
+        innerList.add(new Entity<>(key, value));
+        size++;
+    }
+
+    public void reHash() {
+        ArrayList<LinkedList<Entity<K, V>>> old = table;
+        table = new ArrayList<>();
+
+        for (int i = 0; i < old.size() * 2; i++) {
+            table.add(new LinkedList<>());
+        }
+
+        size = 0;
+        for (LinkedList<Entity<K, V>> entries : old) {
+            for(Entity<K, V> entry : entries) {
+                put(entry.key, entry.value);
+            }
         }
     }
 }
