@@ -1,8 +1,5 @@
 package Questions;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
 public class ExcelColumn {
     public static void main(String[] args) {
         int n = 5473578;
