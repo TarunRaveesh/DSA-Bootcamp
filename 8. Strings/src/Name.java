@@ -17,7 +17,7 @@ public class Name {
     }
 
     static void oddChar(ArrayList<Character> arr) {
-        System.out.print(arr.getFirst() + " ");
+        System.out.print(arr.get(0) + " ");
         for (int i = 1; i < arr.size(); i++) {
             if(i % 2 == 0) {
                 System.out.print(arr.get(i) + " ");

@@ -1,5 +1,6 @@
 package LongestSubarray;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Brute {
@@ -17,17 +18,27 @@ public class Brute {
 
     public static int LongestSubarrayLength(int[] arr, int n, int k) {
         int maxlen = 0;
+        int s = 0, e = 0;
         for (int i = 0; i < n; i++) {
             int sum = 0;
             for (int j = i; j < n; j++) {
                 sum += arr[j];
                 if(sum <= k) {
-                    maxlen = Math.max(maxlen, i - j + 1);
+                    if(maxlen < j - i + 1) {
+                        maxlen = j - i + 1;
+                        s = i;
+                        e = j;
+                    }
                 } else {
                     break;
                 }
             }
         }
+        int[] window = new int[e - s + 1];
+        for (int i = 0; i < window.length; i++) {
+            window[i] = arr[s + i];
+        }
+        System.out.println(Arrays.toString(window));
         return maxlen;
     }
 }

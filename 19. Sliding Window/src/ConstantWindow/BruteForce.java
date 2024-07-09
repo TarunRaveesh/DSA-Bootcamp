@@ -9,8 +9,8 @@ public class BruteForce {
             int currsum = 0;
             for (int j = 0; j < k; j++) {
                 currsum += arr[i + j];
-                maxsum = Math.max(currsum, maxsum);
             }
+            maxsum = Math.max(currsum, maxsum);
         }
         System.out.println(maxsum);
     }
