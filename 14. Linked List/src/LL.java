@@ -1,4 +1,4 @@
-public class LL {
+public class LL { // Linked List
     private Node head;
     private Node tail;
     private int size;

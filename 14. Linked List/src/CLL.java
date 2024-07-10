@@ -1,4 +1,4 @@
-public class CLL {
+public class CLL { // Circular Linked List
     private Node head;
     private Node tail;
     private int size;
