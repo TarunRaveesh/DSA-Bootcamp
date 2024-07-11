@@ -7,10 +7,10 @@ public class Q55 { // Pascal Triangle
             for (int j = n - i - 1; j > 0; j--) {
                 System.out.print(" ");
             }
-            int no = 1;
+            int num = 1;
             for (int k = 0; k <= i; k++) {
-                System.out.print(no + " ");
-                no = no * (i - k) / (k + 1);
+                System.out.print(num + " ");
+                num = num * (i - k) / (k + 1);
             }
             System.out.println();
         }
