@@ -1,7 +1,7 @@
 package BasicRound;
 
 public class Q115 {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // Expand String
         String s = "b3c6d15";
         System.out.println(expandString(s));
     }
