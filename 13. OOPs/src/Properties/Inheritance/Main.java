@@ -29,8 +29,8 @@ public class Main {
 
         // Static Method Overriding
         Box.greeting();
-        // Box box = new BoxWeight();
-        // box.greeting(); // YOU CAN INHERIT BUT U CAN'T OVERRIDE
+//        Box box = new BoxWeight();
+//        box.greeting(); // YOU CAN INHERIT BUT U CAN'T OVERRIDE
         BoxWeight.greeting(); // will call the same static greeting method
 
         // Overriding depends on object, static doesn't depend on object, so a static method can't be overridden.
