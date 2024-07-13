@@ -9,7 +9,7 @@ public class Main {
         // Object will determine how methods will be overridden.
 
         // Parent mom = new Parent(); // Can't create objects of abstract classes
-        Parent.greet(); // Can have static methods, but abstract class can't be static, else can;t be overridden
+        Parent.greet(); // Can have static methods, but abstract class can't be static, else can't be overridden
         son.acknowledge("Rahul"); // Can also have normal methods (Should be called using Objects
         son.career("Rahul", "Entrepreneur");
 

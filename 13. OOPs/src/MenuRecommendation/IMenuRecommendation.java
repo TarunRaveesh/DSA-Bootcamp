@@ -1,4 +1,4 @@
-package ExceptionHandling.MenuRecommendation;
+package MenuRecommendation;
 
 public interface IMenuRecommendation {
     void addItem(int itemId, String displayName);
