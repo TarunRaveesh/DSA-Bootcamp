@@ -31,5 +31,10 @@ public class Main {
         minHeap.add(2);
 
         System.out.println(minHeap);
+
+        map.put(2, "Hi");
+        map.put(3, "Hii");
+        map.put(4, "Hiii");
+        System.out.println(map.getOrDefault(2, "") + 1);
     }
 }

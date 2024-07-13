@@ -41,8 +41,8 @@ class Sudoku {
 
     static boolean isSafe(int[][] board, int row, int col, int num) {
         // Row
-        for (int i = 0; i < board.length; i++) {
-            if (board[row][i] == num) {
+        for (int j = 0; j < board.length; j++) {
+            if (board[row][j] == num) {
                 return false;
             }
         }
