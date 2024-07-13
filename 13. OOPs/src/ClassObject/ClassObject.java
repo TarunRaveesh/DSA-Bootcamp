@@ -51,7 +51,7 @@ public class ClassObject {
         Pawan.name = "New Name"; // We can do this, i.e. modify the object;
         System.out.println(Pawan.name);
         System.out.println(Pawan.num);
-        // Pawan = new FinalCheck("New Name"); // But we can't do this, i.e. change the object;
+        // Pawan = new FinalCheck("New Name"); // But we can't do this, i.e. can't change reference variable to the object;
     }
 }
 
