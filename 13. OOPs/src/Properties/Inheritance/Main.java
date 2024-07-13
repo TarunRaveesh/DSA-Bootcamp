@@ -36,3 +36,22 @@ public class Main {
         // Overriding depends on object, static doesn't depend on object, so a static method can't be overridden.
     }
 }
+
+/* Overriding in object-oriented programming (OOP) depends on objects because it is a mechanism
+that allows a subclass to provide a specific implementation for a method that is already defined
+in its superclass. The specific implementation of the overridden method that gets executed is
+determined at runtime, based on the actual object (instance) being referenced, not the type of
+the reference variable. This is a key aspect of polymorphism in OOP.
+
+Here's a detailed explanation of why overriding depends on objects:
+
+1. Dynamic Method Dispatch
+Dynamic method dispatch (also known as runtime polymorphism) is a process where the call to an overridden
+method is resolved at runtime rather than compile-time. When a method is overridden, the JVM determines
+which method to execute based on the actual object being referenced at runtime, not the type of the
+reference variable.
+
+2. Reference Type vs. Object Type
+In Java, a reference variable can be of a superclass type, but it can point to an object of a subclass type.
+The method that gets called is based on the actual type of the object, not the type of the reference
+variable. */
