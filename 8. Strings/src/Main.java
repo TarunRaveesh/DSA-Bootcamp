@@ -43,8 +43,7 @@ public class Main {
 
         System.out.println(new int[] {1, 3, 5, 7, 9});
         System.out.println(Arrays.toString(new int[] {1, 3, 5, 7, 9})); // If Arrays.toString isn't used then we will get
-        // [I@hashcode - Pity Printing, sice the println method doesnt know the taype of object it is printing
-
+        // [I@hashcode - Pity Printing, since the println method doesn't know the type of object it is printing
         // Also above the Arrays.toString method is overriding the toString method in the println method. Since the final terminal
         // output is always a string whenever we use sout.
 
