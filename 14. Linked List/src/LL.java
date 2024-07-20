@@ -20,7 +20,6 @@ public class LL { // Linked List
             this.next = next;
         }
     }
-
     // Get length
     public int length() {
         return size;
