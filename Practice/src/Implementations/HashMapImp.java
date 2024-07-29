@@ -31,7 +31,7 @@ public class HashMapImp <K, V> {
 
     public int getHash(K key) {
         return (key.hashCode() & 0x7ffffff) % table.size();
-    }
+    }       
     public void put(K key, V value) {
         if((float) (size + 1 / table.size()) > LF) {
             reHash();
