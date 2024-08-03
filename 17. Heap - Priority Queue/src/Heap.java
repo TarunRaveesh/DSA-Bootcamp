@@ -47,12 +47,13 @@ public class Heap <T extends Comparable<T>> { // This implementation is min-heap
         if(list.isEmpty()) {
             throw new Exception("Cannot remove, list is Empty!");
         }
-        T temp = list.getFirst();
-        T last = list.removeLast();
+        T temp = list.get(0);
+        T last = list.get(list.size() - 1);
         if(!list.isEmpty()) {
             list.set(0, last);
         }
         downHeap(0);
+        
         return temp;
     }
 
