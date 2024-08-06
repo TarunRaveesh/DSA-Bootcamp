@@ -1,6 +1,7 @@
+package Questions;
+
 import java.util.*;
 import java.lang.Math;
-import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 public class Code {
@@ -81,8 +82,7 @@ public class Code {
 
         for (int i = 0; i < N; i++) {
             A.add(
-                    Arrays.asList(scan.nextLine().trim().split(" "))
-                            .stream().map(s -> Integer.parseInt(s)).collect(toList())
+                    Arrays.stream(scan.nextLine().trim().split(" ")).map(Integer::parseInt).collect(toList())
             );
         }
 
