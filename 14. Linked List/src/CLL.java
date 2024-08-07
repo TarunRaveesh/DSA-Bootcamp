@@ -18,7 +18,7 @@ public class CLL { // Circular Linked List
         }
         tail.next = node;
         node.next = head;
-        tail = node;
+        tail =node;
         size++;
     }
 
