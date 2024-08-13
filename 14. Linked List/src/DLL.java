@@ -1,4 +1,4 @@
-public class DLL { // Doubly Linked List
+public class                                                                            DLL { // Doubly Linked List
     private Node head;
     private int size;
 

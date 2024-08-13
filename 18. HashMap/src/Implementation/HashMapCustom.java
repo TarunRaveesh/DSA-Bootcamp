@@ -3,7 +3,7 @@ package Implementation;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class HashMapCustom <K, V> {
+public class  HashMapCustom <K, V> {
     private ArrayList<LinkedList<Entity<K, V>>> table;
     private int size = 0;
     protected final float lf = 0.75f;

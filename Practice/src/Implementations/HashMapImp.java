@@ -66,4 +66,8 @@ public class HashMapImp <K, V> {
             }
         }
     }
+
+    public void remove(K key) {
+
+    }
 }
