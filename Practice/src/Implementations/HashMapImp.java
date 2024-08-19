@@ -68,6 +68,8 @@ public class HashMapImp <K, V> {
     }
 
     public void remove(K key) {
-
+        if (key == null) {
+            throw new IllegalArgumentException("Key cannot be Null");
+        }
     }
 }
