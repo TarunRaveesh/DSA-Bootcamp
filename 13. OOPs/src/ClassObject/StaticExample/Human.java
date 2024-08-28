@@ -8,7 +8,7 @@ public class Human {
     static int population; // Static independent of Objects, it becomes a class variable
 
     // If we put an instance variable as static, all the objects will have the same value of it,
-    // specifically, the latest initialized value of it
+    // specifically, the latest constructor initialized value of it
 
     // We can create 'static' methods as well as variables
     // For eg:
