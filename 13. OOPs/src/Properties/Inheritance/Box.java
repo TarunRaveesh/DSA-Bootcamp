@@ -16,7 +16,7 @@ public class Box {
     }
 
     public Box() { // This class doesn't inherit any class hence super keyword which works in a linear fashion
-//        super(); // will call the java Object class, default for every java class
+        super(); // will call the java Object class, default for every java class
         l = -1;
         b = -1;
         h = -1;
