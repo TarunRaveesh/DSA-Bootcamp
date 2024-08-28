@@ -17,6 +17,3 @@ public class StaticInit {
         System.out.println(StaticInit.a + " " + StaticInit.b);
     }
 }
-
-// NOTE: We know objects are created at runtime, and static elements are not dependent on objects,
-// hence they are resolved at compile time, as they are class level elements.
