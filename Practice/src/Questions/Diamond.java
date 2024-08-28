@@ -8,22 +8,14 @@ public class Diamond {
         StringBuilder str = new StringBuilder();
 
         for (int i = 1; i <= n; i++) {
-            for (int k = 1; k <= n - i; k++) {
-                str.append(" ");
-            }
-            for (int j = 1; j <= i; j++) {
-                str.append("* ");
-            }
+            str.append(" ".repeat(Math.max(0, n - i)));
+            str.append("* ".repeat(Math.max(0, i)));
             str.append("\n");
         }
 
         for (int i = n - 1; i > 0; i--) {
-            for (int k = 1; k <= n - i; k++) {
-                str.append(" ");
-            }
-            for (int j = 1; j <= i; j++) {
-                str.append("* ");
-            }
+            str.append(" ".repeat(Math.max(0, n - i)));
+            str.append("* ".repeat(i));
             str.append("\n");
         }
         System.out.println(str);
