@@ -14,8 +14,6 @@ public class MethodOverriding {
                 '}';
     }
 
-
-
     public static void main(String[] args) {
         MethodOverriding obj = new MethodOverriding(45);
         System.out.println(obj); // Uses java default Object Class toString Method;
