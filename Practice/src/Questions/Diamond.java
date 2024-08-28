@@ -26,7 +26,6 @@ public class Diamond {
             }
             str.append("\n");
         }
-
         System.out.println(str);
     }
 }
