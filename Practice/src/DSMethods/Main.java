@@ -14,6 +14,7 @@ public class Main {
         HashSet<Integer> set = new HashSet<>();
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
+        minHeap.add(1);
         set.add(5);
         set.add(2);
         set.add(1);
