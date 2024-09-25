@@ -13,12 +13,15 @@ public class MethodOverloading {
         return a + b + c;
     }
 
+    double sum(int b, double a) { return a + a + b + b; }
+
     public static void main(String[] args) {
         MethodOverloading obj = new MethodOverloading();
 
         System.out.println(obj.sum(3, 5)); // 1st One - But if first one is not there then it will cast as 2nd One
         System.out.println(obj.sum(4.5, 6)); // 2nd One
         System.out.println(obj.sum(4, 5, "Tarun")); // 3rd One
+        System.out.println(obj.sum(2, 5.6)); //4th One
     }
 
     /*
