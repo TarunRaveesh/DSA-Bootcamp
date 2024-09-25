@@ -20,4 +20,15 @@ public class MethodOverloading {
         System.out.println(obj.sum(4.5, 6)); // 2nd One
         System.out.println(obj.sum(4, 5, "Tarun")); // 3rd One
     }
+
+    /*
+      Method Overloading:
+      Name of the methods overloading one another must be SAME
+      There are 3 Possible scenarios wrt the formal parameters of this method:
+      1. Type of parameters must be different
+      2. No. of Parameters must be different
+      3. Sequence of parameters must be different
+
+      Note: Method Overloading Doesn't depend upon return type alone
+     */
 }
